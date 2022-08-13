@@ -671,6 +671,7 @@ void *helper_link_table[] =
     helper_unwind_protect,
     specbind,
     /*garbage_collect, *//*maybe_gc,*/
+    maybe_garbage_collect,
     maybe_quit };
 
 
@@ -2767,7 +2768,7 @@ declare_runtime_imported_funcs (void)
   args[0] = args[1] = comp.lisp_obj_type;
   ADD_IMPORTED (specbind, comp.void_type, 2, args);
 
-  ADD_IMPORTED (maybe_gc, comp.void_type, 0, NULL);
+  ADD_IMPORTED (maybe_garbage_collect, comp.void_type, 0, NULL);
 
   ADD_IMPORTED (maybe_quit, comp.void_type, 0, NULL);
 
