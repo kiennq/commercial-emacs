@@ -20,7 +20,7 @@
    the system's <stdio.h> here, so that orig_fopen doesn't recurse to
    rpl_fopen.  */
 #define _GL_ALREADY_INCLUDING_STDIO_H
-#include <config.h>
+/* #include <config.h> */
 
 /* Get the original definition of fopen.  It might be defined as a macro.  */
 #include <stdio.h>
