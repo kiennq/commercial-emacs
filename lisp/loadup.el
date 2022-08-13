@@ -247,6 +247,7 @@
 (load "simple")
 (load "emacs-lisp/seq")
 (load "emacs-lisp/nadvice")
+(load "emacs-lisp/cl-lib")
 (load "minibuffer") ;Needs cl-generic (and define-minor-mode).
 (load "frame")
 (load "startup")
